@@ -127,7 +127,7 @@ const updatePost = async (req, res) => {
         };
 
         if (req.body.categories) {
-            updateOnj.categories = req.body.categories;
+            updateObj.categories = req.body.categories;
         }
 
         const updatedPost = await Post.findByIdAndUpdate(

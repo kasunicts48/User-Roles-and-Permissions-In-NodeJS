@@ -1,7 +1,5 @@
 const Permission = require('../../models/permissionModel');
 const { validationResult } = require('express-validator');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 const addPermission = async (req, res) => {
     try {

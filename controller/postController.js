@@ -1,7 +1,5 @@
 const Post = require('../models/postModel');
 const { validationResult } = require('express-validator');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 const createPost = async (req, res) => {
     try {

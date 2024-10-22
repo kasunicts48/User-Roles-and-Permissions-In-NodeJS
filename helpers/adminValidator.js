@@ -44,3 +44,9 @@ exports.postUpdateValidator = [
         return true;
     }),
 ];
+
+// Role Validation
+exports.roleStoreValidator = [
+    check('role_name', 'Role Name is required').not().isEmpty(),
+    check('value', 'Value is required').not().isEmpty(),
+];

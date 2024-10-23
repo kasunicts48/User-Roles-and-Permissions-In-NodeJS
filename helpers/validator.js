@@ -20,3 +20,13 @@ exports.createUserValidator = [
         gmail_remove_dots: true,
     }),
 ];
+exports.updateUserValidator = [
+    check('id', 'ID is required').not().isEmpty(),
+    check('name', 'Name is required').not().isEmpty(),
+];
+exports.deleteUserValidator = [check('id', 'ID is required').not().isEmpty()];
+
+exports.postLikeUnlikeValidator = [
+    check('user_id', 'User ID is required').not().isEmpty(),
+    check('post_id', 'Post ID is required').not().isEmpty(),
+];
